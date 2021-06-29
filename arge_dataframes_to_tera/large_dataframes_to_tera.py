@@ -95,8 +95,8 @@ class upload_to_tera:
                 # create new tables in tera
                 create_statment = cur.execute("show table " + table_name).fetchall()[0]
                 create_statment = create_statment[0].replace('\r', '\n')
-                a = stack()
-                b = stack()
+                a = self.stack()
+                b = self.stack()
                 print(a)
                 print(b)
                 table_name1 = table_name + a
